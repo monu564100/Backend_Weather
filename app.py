@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
 # MongoDB setup
-mongo_client = MongoClient("mongodb://localhost:27017")
+mongo_client = MongoClient("mongodb+srv://dreadwing5:UPw4YunHTB6ISOIi@cluster0.5mb2e.mongodb.net/cmrit-mentor")
 db = mongo_client["disaster_prediction_db"]
 help_requests_collection = db["help_requests"]
 
