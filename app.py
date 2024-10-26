@@ -8,7 +8,7 @@ import os
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "https://weather-ml-prediction.netlify.app"]}})
+CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "https://weather-ml-prediction.netlify.app","https://prediction-model.netlify.app"]}})
 
 # MongoDB setup
 mongo_client = MongoClient("mongodb+srv://dreadwing5:UPw4YunHTB6ISOIi@cluster0.5mb2e.mongodb.net/cmrit-mentor")
